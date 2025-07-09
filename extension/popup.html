@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>LexiSage</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>LexiSage ✨</h1>
+      <button id="themeToggle">🌓</button>
+    </header>
+
+    <textarea id="inputText" placeholder="Paste text to summarize or rephrase..."></textarea>
+
+    <div class="controls">
+      <select id="modeSelect">
+        <option value="summarize">Summarize</option>
+        <option value="rephrase">Rephrase</option>
+      </select>
+      <button id="runBtn">✨ Run</button>
+    </div>
+
+    <div id="outputSection" class="hidden">
+      <label>Output:</label>
+      <div class="output-box">
+        <p id="outputText"></p>
+        <div class="output-actions">
+          <button id="copyBtn">📋 Copy</button>
+          <button id="pinBtn">📌 Pin</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="historyTab">
+      <h2>History</h2>
+      <ul id="historyList"></ul>
+    </div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
